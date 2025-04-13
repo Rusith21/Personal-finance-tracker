@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance: Rs. 0"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvBudgetStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Budget Status"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Add Transaction"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnOpenBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💰 Set Budget"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnExportCsv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Export to CSV"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚪 Logout"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

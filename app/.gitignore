@@ -1,0 +1,55 @@
+# ✅ Android build files
+/build/
+**/build/
+
+# ✅ Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ✅ Gradle
+.gradle/
+local.properties
+gradle-wrapper.jar
+
+# ✅ Kotlin/Java
+*.class
+*.jar
+*.war
+*.ear
+
+# ✅ OS files (macOS)
+.DS_Store
+
+# ✅ Logs
+*.log
+
+# ✅ Generated files
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+
+# ✅ Signing keys (DO NOT COMMIT!)
+*.jks
+*.keystore
+
+# ✅ IntelliJ run configs
+.idea/runConfigurations/
+
+# ✅ VS Code
+.vscode/
+
+# ✅ Misc
+*.swp
+*.swo
+
+# ✅ Crashlytics/Firebase
+fabric.properties
+google-services.json
+
+# ✅ Node/npm if used
+node_modules/
+package-lock.json
