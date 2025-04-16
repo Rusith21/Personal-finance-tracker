@@ -33,7 +33,8 @@ An intuitive Android app for tracking daily expenses, managing budgets, and anal
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/Personal-Finance-Tracker.git
+   git clone https://github.com/Rusith21/Personal-finance-tracker.git
+
    cd Personal-Finance-Tracker
 
 
